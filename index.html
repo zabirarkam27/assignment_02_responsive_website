@@ -6,40 +6,49 @@
     <title>Responsive Website Assignment</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-     <header>
+<body class="element">
+     <header id="banner-bg">
         <!-- This is navigation section -->
-         <section>
-            <h4 class="logo">Fitness</h4>
-            <nav class="nav">
-                <ul class="nav-ul">
-                    <li class="nav-li">Home</li>
-                    <li class="nav-li">Service</li>
-                    <li class="nav-li">Contact</li>
-                    <li class="nav-li">About</li>
-                </ul>
-            </nav>
-         </section>
+        <nav class="navbar display-flex">
+            <h3 class="logo cinnabar">Fitness</h3>
+            <ul class="nav-ul display-flex">
+                <li class="nav-item">
+                    <a href="" class="nav-link btn-primary">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link white">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link white">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link white">About</a>
+                </li>
+            </ul>
+            <img src="images/nav.png" id="nav-icon" alt="nav icon">
+        </nav>
+
         <!-- This is banner section -->
-        <section class="banner">
-            <div>
-                <h1>Get body in shape & stay healthy</h1>
-                <p>
+        <section class="banner display-flex">
+            <div class="banner-description">
+                <h1 class="banner-title white">Get body in <br><span id="shape-word">shape</span> & stay <br> healthy</h1>
+                <p class="banner-text white-opacity50">
                     Get in shape and stay healthy with regular exercise, a balanced diet, and proper rest.
                 </p>
-                <button>Join Club Now</button>
-                <button>Download App</button>
+                <button class="btn-primary">Join Club Now</button>
+                <button class="btn-primary" id="btn">Download App</button>
             </div>
-            <div>
-                <img src="images/Images 2.png" alt="">
-                <div class="banner-cards">
-                    <div class="banner-card-1">
-                        <h2>500+</h2>
-                        <p>Free workout videos</p>
-                    </div>
-                    <div class="banner-card-2">
-                        <h2>350+</h2>
-                        <p>Video tutorial</p>
+            <div class="banner-img">
+                <img src="images/Images 2.png" class="banner-hero" alt="">
+                <div class="banner-card-1">
+                    <h2 class="white banner-card-1-heading">500+</h2>
+                    <p class="white-opacity50 banner-card-text">Free workout videos</p>
+                </div>
+                <div class="banner-card-2">
+                    <div id="circle"></div>
+                    <div>
+                        <h2 class="white">350+</h2>
+                        <p class="white-opacity50">Video tutorial</p>
                     </div>
                 </div>
             </div>
