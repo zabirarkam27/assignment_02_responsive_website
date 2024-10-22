@@ -217,18 +217,49 @@ header, #banner-bg {
 .change-habit .section-header{
     text-align: center;
 }
+.change-habit-cards{
+    gap: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.change-habit-card-img{
+    max-width: 272px;
+    width: 100%;
+    border: 3px solid #222222;;
+    border-radius: 50%;
+    margin: 50px auto 30px;
+}
+.change-habit-card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.change-habit-card-detail{
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+
 
 
 /* Responsive for small devices */
 @media screen and (max-width:576px) {
+
+    /* shared styles */
     *{
         width: 98%;
     }
     header, #banner-bg{
         max-height: 167vh;
     }
+    .section-title{
+        font-size: 2.25rem;
+    }
+    .section-detail {
+        font-size: 0.875rem;
+    }
 
-    /* nav items */
+    /* nav item styles */
     .nav-ul{
         display: none;
     }
@@ -237,7 +268,7 @@ header, #banner-bg {
         display: block;
     }
 
-    /* banner items */
+    /* banner item styles */
     .banner{
         flex-direction: column;
     }
@@ -268,9 +299,7 @@ header, #banner-bg {
     .btn-large-device{
         display: none;
     }
-    nner-img{
-        width: 80%;
-    }
+    
     .banner-card-1-heading{
         font-size: 1.5rem;
     }
@@ -292,5 +321,14 @@ header, #banner-bg {
         height: 20px;
         width: 25px;
         border-radius: 100%;
+    }
+
+    /* change your habit section styles*/
+    .change-habit-cards{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+    .change-habit-card-img{
+        width: 70%;
     }
 }
