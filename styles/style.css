@@ -8,6 +8,7 @@
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     max-width: 1440px;
+    color: #FFF;
     /* background-color: #000000; */
 }
 
@@ -15,9 +16,9 @@
     background-color: #000000;
 }
 
-#banner-bg{
-    max-height: 715px;
-    height: 100%;
+header, #banner-bg {
+    /* max-height: 715px; */
+    max-height: 140vh;
     background: linear-gradient(to bottom, rgb(119, 119, 119, 0), rgb(17, 17, 17, 1), rgb(119, 119, 119, 0));
 }
 
@@ -114,9 +115,17 @@
     margin-top: 96px
     
 }
+.banner-description{
+    max-width: 599px;
+    width: 80%;
+}
 .banner-title{
     font-size: 4.875rem;
     font-weight: 900;
+}
+
+#shape-word{
+    font-family:'Miama', sans-serif;
 }
 
 .banner-text{
@@ -124,8 +133,9 @@
     font-size: 1rem;
 }
 
-#shape-word{
-    font-family:'Miama', sans-serif;
+.banner-img{
+    max-width: 320px;
+    width: 100%;
 }
 
 .banner-hero{
@@ -137,6 +147,7 @@
     font-size: 0.8125rem;
     
 }
+
 .banner-card-1{
     width: 125px;
     font-size: 0.8125rem;
@@ -161,24 +172,59 @@
     display: flex;
     gap: 15px;
 }
+
 #circle{
     height: 40px;
     width: 40px;
     background-color: #E6533C;
     border-radius: 50%;
     border: 1px solid #E6533C;
-    
 }
 
 
 
-/* Responsive for small device */
+/* change your habit styles */
+.section-title{
+    font-size: 3rem;
+    font-weight:900;
+}
+.section-detail{
+    font-size: 0.875rem;
+    font-weight:400;
+}
+
+
+/* Responsive for small devices */
 @media screen and (max-width:576px) {
+
+    /* nav items */
     .nav-ul{
         display: none;
     }
 
     #nav-icon{
         display: block;
+    }
+
+    /* banner items */
+    .banner{
+        display: block;
+    }
+    .banner-title{
+        font-size: 2.75rem;
+    }
+    .banner-img{
+        width: 60%;
+    }
+    .banner-card-1-heading{
+        font-size: 1.75rem;
+    }
+    .banner-card-1{
+        width: 125px;
+        translate: 120px -450px;
+        padding: 17px 30px;
+    }
+    .banner-card-2{
+        translate: -90px -280px;
     }
 }
