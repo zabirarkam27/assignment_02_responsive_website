@@ -38,7 +38,7 @@ header, #banner-bg {
     font-size: 1.125rem;
     color: #fff;
     background-color: #E6533C;
-    border: 1px solid rgb(255, 255, 255, .5);
+    border-color: #E6533C;
     border-radius: 46px;
     padding: 8px 20px;
     transition: background-color 0.3s, border-color 0.3s;
@@ -51,6 +51,7 @@ header, #banner-bg {
 
 #btn{
     background-color:transparent;
+    border-color: rgba(255, 255, 255, .2);
 }
 
 #btn:hover{
@@ -61,6 +62,7 @@ header, #banner-bg {
 .section-header{
     max-width: 671px;
     width: 100%;
+    margin: 50px auto;
 }
 
 .section-title{
@@ -71,6 +73,7 @@ header, #banner-bg {
 .section-detail{
     font-size: 0.875rem;
     font-weight:400;
+    margin: 14px auto 34px;
 }
 
 /* color */
@@ -97,6 +100,8 @@ header, #banner-bg {
 
 /* navbar styles */
 .navbar{
+    max-width: 1110px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
@@ -214,6 +219,11 @@ header, #banner-bg {
 
 
 /* change your habit styles */
+.change-habit{
+    margin: 0 auto 50px;
+    max-width: 1060px;
+    width: 100%;
+}
 .change-habit .section-header{
     text-align: center;
 }
@@ -239,12 +249,26 @@ header, #banner-bg {
     font-weight: 400;
 }
 
+/* run extra mile styles */
+.run-extra-mile{
+    max-width: 1060px;
+    width: 100%;
+    background-color: #222222; 
+    border-radius: 18px;
+    padding: 30px 30px;
+
+}
+.img-run{
+    max-width: 350px;
+    width: 100%;
+    border-radius: 18px;
+}
+
 
 
 
 /* Responsive for small devices */
 @media screen and (max-width:576px) {
-
     /* shared styles */
     *{
         width: 98%;
@@ -331,4 +355,20 @@ header, #banner-bg {
     .change-habit-card-img{
         width: 70%;
     }
+
+    /* run extra mile */
+    .run-extra-mile {
+        flex-direction: column;
+        gap: 40px;
+        width: 80%;
+    }
+    .img-run{
+        width: 100%;
+    }
+    .btn-primary{
+        max-width: 350px;
+        width: 100%;
+        font-size: 1.125rem;
+    }
+    
 }
