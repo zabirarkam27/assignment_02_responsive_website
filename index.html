@@ -97,13 +97,73 @@
             </div>
             <img src="images/run.jpg" class="img-run" alt="Running a man in nature">
         </section>
+
+        <!-- BMI calculator section starts -->
         <section class="bmi-calculator">
             <div class="section-header">
                 <h3 class="section-title">BMI Calculator</h3>
                 <p class="section-detail white-opacity50">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
             </div>
-            <div>
-                
+            <div class="bmi-bg">
+                <div class="bmi-details display-flex">
+                    <div class="bmi-chart">
+                        <h3 class="chart-heading">BMI Calculator Chart</h3>
+                        <div class="chart-container">
+                            <table class="chart">
+                                <thead>
+                                    <tr>
+                                        <th>BMI</th>
+                                        <th>Weight Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr >
+                                        <td class="white-opacity50">Below 18.5</td>
+                                        <td class="white-opacity50">Underweight</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="white-opacity50">18.5 - 24.9</td>
+                                        <td class="white-opacity50">Healthy</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="white-opacity50">25.0 - 29.9</td>
+                                        <td class="white-opacity50">Overweight</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="white-opacity50">30.0 - and Above</td>
+                                        <td class="white-opacity50">Obese</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="bmi-calculator-form">
+                        <h3 class="chart-heading" id="calculate-bmi">Calculate your BMI</h3>
+                        <p class="calculate-bmi-details">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                        <form action="">
+                            <div class="input-row">
+                                <input type="number" placeholder="Height/cm">
+                                <input type="number" placeholder="Weight/kg">
+                            </div>
+                            <div class="input-row">
+                                <input type="number" placeholder="Age">
+                                <select name="sex" id="sex" placeholder="Select Sex:">
+                                    <option value="disabled selected">Sex</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                            <div class="input-full">
+                                <select name="sex" id="sex" placeholder="Select Sex:">
+                                    <option value="disabled selected">Select an activity factor</option>
+                                </select>
+                            </div>
+                        </form>
+                        <button class="btn-primary">Calculate</button>
+                    </div>
+
+                </div>
             </div>
         </section>
      </main>
