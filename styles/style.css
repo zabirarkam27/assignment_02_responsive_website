@@ -8,8 +8,8 @@
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     max-width: 1440px;
+    width: 98%;
     color: #FFF;
-    /* background-color: #000000; */
 }
 
 .element{
@@ -17,18 +17,24 @@
 }
 
 header, #banner-bg {
-    /* max-height: 715px; */
     max-height: 140vh;
     background: linear-gradient(to bottom, rgb(119, 119, 119, 0), rgb(17, 17, 17, 1), rgb(119, 119, 119, 0));
 }
 
 .display-flex{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
+.buttons{
+    width: 400px;
+    translate: -104px 0;
+}
+
 .btn-primary{
+    max-width: 180px;
+    width: 100%;
     font-size: 1.125rem;
     color: #fff;
     background-color: #E6533C;
@@ -50,6 +56,21 @@ header, #banner-bg {
 #btn:hover{
     background-color: rgb(119, 119, 119, 0.1);
     border-color: rgba(255, 255, 255, 1);
+}
+
+.section-header{
+    max-width: 671px;
+    width: 100%;
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight:900;
+}
+
+.section-detail{
+    font-size: 0.875rem;
+    font-weight:400;
 }
 
 /* color */
@@ -112,12 +133,12 @@ header, #banner-bg {
 
 /* banner styles */
 .banner{
-    margin-top: 96px
-    
+    margin-top: 96px;
 }
 .banner-description{
     max-width: 599px;
-    width: 80%;
+    width: 95%;
+    translate: 0 -110px;
 }
 .banner-title{
     font-size: 4.875rem;
@@ -131,6 +152,13 @@ header, #banner-bg {
 .banner-text{
     margin:28px 0;
     font-size: 1rem;
+}
+.buttons{
+    gap: 10px;
+}
+
+.btn-small-device{
+    display: none;
 }
 
 .banner-img{
@@ -163,39 +191,42 @@ header, #banner-bg {
 }
 
 .banner-card-2{
-    width: 150px;
+    max-width: 150px;
+    width: 40%;
     font-size: 0.8125rem;
     translate: -160px -240px;
-    padding: 17px 30px;
+    padding: 17px 20px;
     border-radius: 12px;
     background-color: rgb(255, 255, 255, 0.1);
     display: flex;
-    gap: 15px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 #circle{
-    height: 40px;
+    height: 30px;
     width: 40px;
     background-color: #E6533C;
     border-radius: 50%;
-    border: 1px solid #E6533C;
 }
 
 
 
 /* change your habit styles */
-.section-title{
-    font-size: 3rem;
-    font-weight:900;
-}
-.section-detail{
-    font-size: 0.875rem;
-    font-weight:400;
+.change-habit .section-header{
+    text-align: center;
 }
 
 
 /* Responsive for small devices */
 @media screen and (max-width:576px) {
+    *{
+        width: 98%;
+    }
+    header, #banner-bg{
+        max-height: 167vh;
+    }
 
     /* nav items */
     .nav-ul{
@@ -208,23 +239,58 @@ header, #banner-bg {
 
     /* banner items */
     .banner{
+        flex-direction: column;
+    }
+    .buttons{
+        max-width: 240px;
+        width: 100%;
+        translate: -42px 0;
+    }
+    .btn-primary{
+        width: 150px;
+        width: 80%;
+        font-size: 0.75rem;
+        padding: 8px 10px;
+    }
+    .btn-small-device{
         display: block;
+        font-size: 0.75rem;
+        max-width: 150px;
+        width: 80%;
+        padding: 8px 10px;
+    }
+    .banner-description{
+        translate: 0 -50px;
     }
     .banner-title{
         font-size: 2.75rem;
     }
-    .banner-img{
-        width: 60%;
+    .btn-large-device{
+        display: none;
+    }
+    nner-img{
+        width: 80%;
     }
     .banner-card-1-heading{
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     .banner-card-1{
-        width: 125px;
-        translate: 120px -450px;
-        padding: 17px 30px;
+        width: 40%;
+        padding: 10px 10px;
+        translate: 90px -430px;
+    }
+    .banner-card-text{
+        font-size: 0.70rem;
     }
     .banner-card-2{
         translate: -90px -280px;
+        width: 40%;
+        padding: 10px 10px;
+        gap: 5px;
+    }
+    #circle{
+        height: 20px;
+        width: 25px;
+        border-radius: 100%;
     }
 }
