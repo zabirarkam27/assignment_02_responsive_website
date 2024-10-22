@@ -371,6 +371,40 @@ td{
     flex-direction: column;
 }
 
+/* meet our team styles */
+.team{
+    text-align:center;
+}
+.team-photo{
+    max-width: 1060px;
+    width: 100%;
+    background-color: #222222; 
+    border-radius: 18px;
+    padding: 35px 30px 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.team-photo img{
+    max-width: 326px;
+    width: 100%;
+    max-height: 272px;
+    height: 100%;
+    border-radius: 18px;
+}
+.photo-name{
+    text-align: left;
+    translate: 20px -60px;
+}
+.photo-name h4{
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+.photo-name p{
+    font-size: 0.825rem;
+    font-weight: 400;
+}
+
 
 /* Responsive for small devices */
 @media screen and (max-width:576px) {
@@ -515,27 +549,20 @@ td{
         max-width: 350px;
         font-size: 1rem;
     }
+
+    /* meet our team */
+    .team-photo{
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-photo img{
+        width: 100%;
+        height: 100%;
+    }
+    .photo-1, .photo-2{
+        display: none
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
    /* shared styles */
@@ -634,6 +661,28 @@ td{
         padding: 15px;
         font-size: 1rem;
     }
+
+    /* meet our team */
+    .team-photo{
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .team-photo img{
+        width: 100%;
+        height: 80%;
+    }
+    .photo-name{
+        text-align: left;
+        translate: 10px -50px;
+    }
+    .photo-name h4{
+        font-size: .9rem;
+        font-weight: 800;
+    }
+    .photo-name p{
+        font-size: 0.825rem;
+        font-weight: 400;
+    }
 }
 
 
@@ -695,6 +744,20 @@ td{
     }
     .run-extra-mile{
         width: 92%;
+    }
+
+    /* meet our team */
+    .team-photo{
+        width: 95%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .team-photo img{
+        width: 100%;
+        height: 100%;
+    }
+    .photo-name{
+        text-align: left;
+        translate: 10px -50px;
     }
 }
 
