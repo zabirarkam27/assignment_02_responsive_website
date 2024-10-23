@@ -30,6 +30,7 @@ header, #banner-bg {
 .buttons{
     width: 400px;
     translate: -104px 0;
+    gap: 10px;
 }
 
 .btn-primary{
@@ -59,6 +60,10 @@ header, #banner-bg {
     border-color: rgba(255, 255, 255, 1);
 }
 
+.btn-small-device{
+    display: none;
+}
+
 .section-header{
     max-width: 671px;
     width: 100%;
@@ -75,6 +80,7 @@ header, #banner-bg {
     font-weight:400;
     margin: 14px auto 34px;
 }
+
 
 /* color */
 .white{
@@ -160,13 +166,6 @@ header, #banner-bg {
     margin:28px 0;
     font-size: 1rem;
 }
-.buttons{
-    gap: 10px;
-}
-
-.btn-small-device{
-    display: none;
-}
 
 .banner-img{
     max-width: 300px;
@@ -227,15 +226,18 @@ header, #banner-bg {
     max-width: 1060px;
     width: 100%;
 }
+
 .change-habit .section-header{
     text-align: center;
 }
+
 .change-habit-cards{
     gap: 40px;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+
 .change-habit-card-img{
     max-width: 272px;
     width: 100%;
@@ -243,14 +245,17 @@ header, #banner-bg {
     border-radius: 50%;
     margin: 50px auto 30px;
 }
+
 .change-habit-card-title{
     font-size: 1.25rem;
     font-weight: 600;
 }
+
 .change-habit-card-detail{
     font-size: 0.875rem;
     font-weight: 400;
 }
+
 
 /* run extra mile styles */
 .run-extra-mile{
@@ -259,8 +264,8 @@ header, #banner-bg {
     background-color: #222222; 
     border-radius: 18px;
     padding: 30px 30px;
-
 }
+
 .img-run{
     max-width: 350px;
     width: 100%;
@@ -302,6 +307,7 @@ header, #banner-bg {
 .chart-container{
     margin-top: 50px;
 }
+
 .chart{
     max-width: 310px;
     width: 100%;
@@ -314,10 +320,12 @@ th, td {
     padding: 15px 15px;
     text-align: left;
 }
+
 th{
     font-size: 1rem;
     font-weight: 500;
 }
+
 td{
     font-size: 0.875rem;
     font-weight: 400;
@@ -327,6 +335,7 @@ td{
 #calculate-bmi{
     translate: 0 0;
 }
+
 .calculate-bmi-details{
     color: rgb(255, 255, 255, .5);
     margin-bottom: 30px;
@@ -356,6 +365,7 @@ td{
 .input-row input, .input-row select {
     flex: 1;
 }
+
 .input-full select {
     width: 100%;
     margin-bottom: 15px;
@@ -375,6 +385,7 @@ td{
 .team{
     text-align:center;
 }
+
 .team-photo{
     max-width: 1060px;
     width: 100%;
@@ -385,6 +396,7 @@ td{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
 .team-photo img{
     max-width: 326px;
     width: 100%;
@@ -392,19 +404,63 @@ td{
     height: 100%;
     border-radius: 18px;
 }
+
 .photo-name{
     text-align: left;
     translate: 20px -60px;
 }
+
 .photo-name h4{
     font-size: 1.25rem;
     font-weight: 900;
 }
+
 .photo-name p{
     font-size: 0.825rem;
     font-weight: 400;
 }
 
+/* creative extra section styles */
+.testimonial{
+    max-width: 1060px;
+    padding: 50px, 30px;
+    margin-top: 80px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.testimonial .section-header{
+    margin-bottom: 40px;
+}
+
+.testimonial .section-detail{
+    font-size: 1.125rem;
+}
+
+.testimonial-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial-item{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 18px;
+    font-size: 1.125rem;
+    font-style: italic;
+}
+
+.testimonial-item span{
+    font-family: 'Pacifico', cursive;
+    font-weight: 600;
+}
+
+.testimonial-item h4{
+    font-size: 1.5rem;
+    margin-top: 20px;font-weight: 800;
+    color: #E6533C;
+}
 
 /* footer styles */
 .footer{
@@ -414,6 +470,7 @@ td{
     padding: 50px 30px;
     box-sizing: border-box;
 }
+
 .footer-content {
     max-width: 1060px;
     width: 100%;
@@ -421,6 +478,7 @@ td{
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
 }
+
 .get-start-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -431,31 +489,46 @@ td{
     width: 100%;
     margin-bottom: 30px;
 }
+
 .logo-big h4{
     font-size: 4.375rem;
     font-weight:800;
     margin: 0;
 }
+
 .logo-big p{
     font-size: 0.875rem;
     font-weight:400;
     line-height: 2;
 }
+
 .get-start{
     max-width: 200px;
     margin-bottom: 30px;
 }
+
 .get-start-heading{
     font-size: 2rem;
     font-weight:700;
     margin-bottom: 20px;
 }
+
 .links a{
     text-decoration: none;
     font-size: 1.5rem;
     line-height: 1.75;
 }
 
+.copyright{
+    max-width: 1060px;
+    width : 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 100px;
+    padding: 30px;
+    box-sizing: border-box;
+}
 
 
 /* Responsive for small devices */
@@ -478,7 +551,6 @@ td{
     .nav-ul{
         display: none;
     }
-
     #nav-icon{
         display: block;
     }
@@ -487,7 +559,6 @@ td{
     .banner{
         flex-direction: column;
     }
-
     .banner-title{
         font-size: 2.75rem;
     }
@@ -495,9 +566,9 @@ td{
         translate: -7px -50px;
     }
     .buttons{
-        max-width: 240px;
+        max-width: 350px;
         width: 100%;
-        translate: -42px 0;
+        translate: 0 0;
     }
     .btn-primary{
         width: 150px;
@@ -615,6 +686,15 @@ td{
         display: none;
     }
 
+    /* creative extra section */
+    .testimonial{
+        width: 80%;
+    }
+    .testimonial-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     /* footer */
     .footer-content {
         display: grid;
@@ -625,13 +705,16 @@ td{
         grid-template-columns: repeat(1, 1fr);
         justify-items: start;
     }
+    .copyright{
+        font-size: 0.85rem;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
    /* shared styles */
-   header, #banner-bg{
-    max-height: 165vh;
-}
+    header, #banner-bg{
+        max-height: 165vh;
+    }
     .section-title{
         font-size: 2.5rem;
     }
@@ -701,8 +784,6 @@ td{
         margin-top:20px;
         translate: -15px 0px;
     }
-
-
     #calculate-bmi{
         translate: 5px 0;
         margin-top: 30px;
@@ -712,12 +793,10 @@ td{
         padding-left:10px;
         margin-bottom: 20px;
     }
-
     .bmi-calculator-form{
         max-width: 95%;
         margin: 0;
     }
-
     .bmi-calculator-form .btn-primary{
         width: 100%;
         max-width: 220px;
@@ -747,6 +826,15 @@ td{
         font-weight: 400;
     }
 
+    /* Creative Extra Section */
+    .testimonial{
+        width: 90%;
+    }
+    .testimonial-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     /* Footer */
     .footer-content {
         max-width: 1060px;
@@ -758,25 +846,26 @@ td{
     .get-start-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
+        gap: 0px;
+    }
+    .copyright{
+        font-size: 1rem;
     }
 }
 
 
 /* Responsive for 768px to 992px */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    /* Adjust styles for this range */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
     .section-title{
         font-size: 2.75rem;
     }
-
     .section-detail {
         font-size: 1rem;
     }
     .banner-description {
         translate: 0px -90px;
     }
-
     .banner-title{
         font-size: 3.75rem;
     }
@@ -793,24 +882,20 @@ td{
     .banner-hero{
         width: 85%;
     }
-    
     .banner-card-1-heading{
         font-size: 1.75rem;
     }
     .banner-card-text{
-        font-size: 0.75rem;
-        
+        font-size: 0.75rem;    
     }
     .banner-card-1{
         padding: 10px 10px;
         width: 70%;
         translate: 70px -370px;
     }
-
     .banner-card-2{
         translate: -140px -270px;
     }
-
     .chart-heading{
         font-size: 1.75rem;
         font-weight: 900;
@@ -837,4 +922,3 @@ td{
         translate: 10px -50px;
     }
 }
-
